@@ -27,7 +27,7 @@ def part2():
         appearances[listTwo[i]] = appearances.get(listTwo[i], 0) + 1
 
     for i in range(len(listOne)):
-        similarity = int(listOne[i]) * appearances.get(listOne[i], 0)
+        similarity += int(listOne[i]) * appearances.get(listOne[i], 0)
     
     print(similarity)
 
